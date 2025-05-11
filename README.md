@@ -15,7 +15,7 @@ Este projeto é um painel de produtos integrando com a [Fake Store API](https://
 1. **Clone o repositório**
 
 ```bash
-git clone https://github.com/vitor-tardivo/Atividade-Auth-JWT
+git clone https://github.com/Luismiguel562/atividade_jwt
 cd seu-projeto
 npm install
 npm run dev
