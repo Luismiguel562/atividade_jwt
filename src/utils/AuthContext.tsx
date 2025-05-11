@@ -1,5 +1,6 @@
+// src/auth/AuthContext.tsx
 import { createContext, useContext, useState } from 'react'
-import type { ReactNode } from 'react'  // Corrigido para importação type-only
+import type { ReactNode } from 'react'  // Importação para usar ReactNode
 
 interface AuthContextType {
     token: string | null
@@ -10,9 +11,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
-    const [token, setToken] = useState<string | null>(
-        localStorage.getItem('token')
-    )
+    const [token, setToken] = useState<string | null>(localStorage.getItem('token'))
 
     const saveToken = (newToken: string | null) => {
         if (newToken) {
