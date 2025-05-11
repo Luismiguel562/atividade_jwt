@@ -1,13 +1,13 @@
-// src/utils/axiosInstance.ts
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: 'https://sua-api.com',  // Substitua pela URL da sua API
+    baseURL: 'http://localhost:3000',  // Substitua com a URL correta da sua API
     headers: {
         'Content-Type': 'application/json',
     },
 })
 
+// Interceptor para adicionar o token de autenticação nas requisições
 api.interceptors.request.use(
     (config) => {
         const token = localStorage.getItem('token')  // Recupera o token do localStorage

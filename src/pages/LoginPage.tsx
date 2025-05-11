@@ -5,8 +5,8 @@ import { useAuth } from '../utils/AuthContext'
 import api from '../utils/axiosInstance'  // Certifique-se de ter o axiosInstance configurado corretamente
 
 export default function LoginPage() {
-    const [username, setUsername] = useState('LUIS')
-    const [password, setPassword] = useState('luis')
+    const [username, setUsername] = useState('mor_2314')
+    const [password, setPassword] = useState('83r5^_')
     const { setToken } = useAuth()
     const navigate = useNavigate()
 
