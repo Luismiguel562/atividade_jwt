@@ -6,7 +6,7 @@ import { useAuth } from '../utils/AuthContext'
 import api from '../utils/axiosInstance'
 
 export default function LoginPage() {
-    const [username, setUsername] = useState('luis')
+    const [username, setUsername] = useState('LUIS')
     const [password, setPassword] = useState('123456')
     const { setToken } = useAuth()
     const navigate = useNavigate()
