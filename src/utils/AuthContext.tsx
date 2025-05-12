@@ -2,7 +2,6 @@ import { createContext, useContext, useState } from 'react'
 import type { ReactNode } from 'react'
 
 
-
 interface AuthContextType {
     token: string | null
     setToken: (token: string | null) => void
@@ -37,5 +36,5 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 export const useAuth = () => {
     const context = useContext(AuthContext)
     if (!context) throw new Error('useAuth deve estar dentro de AuthProvider')
-    return context
+    return context
 }
